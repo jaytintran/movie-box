@@ -1,6 +1,6 @@
 ### Movie Box
 `Author: Tin Tran`
-- An API powered Movie Website w/ React.js, Tailwindcss, MUI, React Router, and so on
+- An API powered Movie Website w/ React.js, Tailwindcss, Material UI, React Router, React DOM, Redux and so on
 
 ![image](https://user-images.githubusercontent.com/29084790/182154170-6c4ab66a-cce2-40ad-843c-caabfeafe996.png)
 
