@@ -10,7 +10,8 @@ function App() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <NavBar className={classes.toolbar} />
+      {/* className={classes.toolbar}  */}
+      <NavBar />
       <main className={classes.content}>
         <Routes>
           <Route exact path="/" element={<Movies />} />
