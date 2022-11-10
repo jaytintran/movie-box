@@ -5,6 +5,7 @@ const drawerWidth = 240;
 const useStyles = makeStyles()((theme) => ({
   toolbar: {
     height: '80px',
+    // width: '100%',
     display: 'flex',
     justifyContent: 'space-between',
     marginLeft: '240px',

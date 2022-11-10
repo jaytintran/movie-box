@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Divider, List, ListItem, ListItemText, ListSubheader, ListItemIcon, Box, CircularProgress } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { styled } from '@mui/system';
 import { useTheme } from '@emotion/react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import logo from './logo.png';
+import logoDark from './logo-dark.png';
 import genreIcons from '../../assets/genres';
 
 import { selectGenreOrCategory } from '../../features/currentGenreOrCategory';
@@ -17,8 +17,7 @@ const categories = [
   { label: 'Upcoming', value: 'upcoming' },
 ];
 
-function Sidebar({ setMobileOpen }) {
-  const { genreIdOrCategoryName } = useSelector((state) => state.currentGenreOrCategory);
+function Sidebar() {
   const theme = useTheme();
   const classes = useStyles();
   const { data, isFetching } = useGetGenresQuery();
@@ -33,7 +32,7 @@ function Sidebar({ setMobileOpen }) {
         <img
           className={classes.image}
           alt="logo"
-          src={theme.palette.mode === 'light' ? logo : logo}
+          src={theme.palette.mode === 'light' ? logo : logoDark}
         />
       </Link>
 
@@ -48,8 +47,8 @@ function Sidebar({ setMobileOpen }) {
             className={classes.links}
           >
             <ListItem onClick={() => dispatch(selectGenreOrCategory(value))} button>
-              <ListItemIcon style={{ color: 'dark' }}>
-                <img src={genreIcons[label.toLowerCase()]} height={30} />
+              <ListItemIcon style={theme.palette.mode === 'light' ? { color: 'dark' } : { color: 'light' }}>
+                <img src={genreIcons[label.toLowerCase()]} className={classes.genreImages} height={30} />
               </ListItemIcon>
               <ListItemText primary={label} sx={{ fontWeight: 'bold' }}>
                 {value}
@@ -74,8 +73,8 @@ function Sidebar({ setMobileOpen }) {
             className={classes.links}
           >
             <ListItem onClick={() => dispatch(selectGenreOrCategory(id))} button>
-              <ListItemIcon style={{ color: 'dark' }}>
-                <img src={genreIcons[name.toLowerCase()]} height={30} />
+              <ListItemIcon style={theme.palette.mode === 'light' ? { color: 'dark' } : { color: 'light' }}>
+                <img src={genreIcons[name.toLowerCase()]} className={classes.genreImages} height={30} />
               </ListItemIcon>
               <ListItemText primary={name} sx={{ fontWeight: 'bold' }} />
             </ListItem>

@@ -1,19 +1,16 @@
-import { makeStyles } from 'tss-react/mui';
+import { makeStyles } from '@mui/styles';
 
-const useStyles = makeStyles()(() => ({
+export default makeStyles(() => ({
   root: {
     display: 'flex',
     height: '100%',
   },
-  toolbar: {
+  content: {
+    flexGrow: 1,
+    padding: '6em 2em 2em',
+    width: '100%',
+  },
+  toolkit: {
     height: '70px',
   },
-  content: {
-    paddingTop: '6rem',
-    paddingLeft: '1rem',
-    paddingRight: '1rem',
-    flexGrow: 1,
-  },
 }));
-
-export default useStyles;

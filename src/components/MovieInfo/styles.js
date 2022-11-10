@@ -14,14 +14,16 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '20px',
     boxShadow: '0.5em 1em 1em rgb(64, 64, 70)',
     width: '80%',
+    margin: '0 auto !important',
     [theme.breakpoints.down('md')]: {
-      margin: '0 auto !imporatant',
+      margin: '0 auto !important',
       width: '50%',
+      display: 'flex',
+      marginBottom: '30px',
     },
     [theme.breakpoints.down('sm')]: {
       margin: '0 auto !imporatant',
-      width: '100%',
-      height: '350px',
+      width: '80%',
       marginBottom: '30px',
     },
   },
@@ -42,6 +44,34 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     [theme.breakpoints.down('sm')]: {
       padding: '0.5rem 1rem',
+    },
+  },
+  castImage: {
+    width: '100%',
+    maxWidth: '6em',
+    height: '8em',
+    objectFit: 'cover',
+    borderRadius: '10px',
+  },
+  buttonsContainer: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%',
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column',
+    },
+  },
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  video: {
+    width: '50%',
+    height: '50%',
+    [theme.breakpoints.down('sm')]: {
+      width: '80%',
+      height: '80%',
     },
   },
 }));
