@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/29084790/209676259-a7cc86c9-efa2-49c8-bd4c-b9fdac955ceb.png)
+
 ### Movie Box
 The application is a web-based movie catalog that allows users to browse and search for movies by title, genre, and other criteria. It is built using JavaScript and React.js as the front-end framework, with Material UI and TailwindCSS for styling and layout.
 
@@ -14,8 +16,6 @@ Overall, the application provides a convenient and user-friendly way for users t
 ### Technologies Usages
 `Material UI` `React` `Alan AI` `JavaScript` `CSS` `Styled Components`
 `NPM` `Git & GitHub` `The Movie DB` `Redux` `Deployment`
-
-![image](https://user-images.githubusercontent.com/29084790/182154170-6c4ab66a-cce2-40ad-843c-caabfeafe996.png)
 
 ### Included
 **React.js**
