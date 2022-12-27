@@ -1,4 +1,12 @@
 ### Movie Box
+The application is a web-based movie catalog that allows users to browse and search for movies by title, genre, and other criteria. It is built using JavaScript and React.js as the front-end framework, with Material UI and TailwindCSS for styling and layout.
+
+The application uses APIs to retrieve movie data from a remote server, including information about the movie's title, plot, cast, and other details. This data is then displayed to the user in a clean and intuitive interface, using Material UI components and TailwindCSS styles.
+
+Users can search for movies by title, genre, or other criteria using the search bar at the top of the page. They can also sort the movies by various criteria, such as release date or rating, using the sort dropdown menu.
+
+Overall, the application provides a convenient and user-friendly way for users to browse and discover new movies, making it easy to find something to watch.
+
 `Author: Tin Tran`
 - This project utilises React.js, Alan AI, Redux, Material and more, it's a fully-functioning app which can browse movies, add to favoriate, view movie details, recommendations, and so on.
 - It's an API powered Movie Website w/ React.js, Tailwindcss, Material UI, React Router, React DOM, Redux and so on.
